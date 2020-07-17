@@ -1,0 +1,19 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.19t|$
+Arch|x86_64-msvc|$
+
+[PLUGINS]
+
+[INVALID]
+C:\PROGRA~1\MICROS~1\Office14\NPAUTHZ.DLL|$
+1263062308000|$
+C:\Program Files\Java\jre1.8.0_181\bin\plugin2\npjp2.dll|$
+1532871272086|$
+C:\Program Files\Java\jre1.8.0_181\bin\dtplugin\npdeployJava1.dll|$
+1532871271730|$
+C:\Users\abeer\AppData\Roaming\Zoom\bin\npzoomplugin.dll|$
+1590091794239|$
+C:\Users\abeer\AppData\Roaming\Mozilla\plugins\npatgpc.dll|$
+1534406421536|$
