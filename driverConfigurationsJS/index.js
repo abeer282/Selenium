@@ -1,10 +1,19 @@
 const {Builder}= require('selenium-webdriver');
-const chrome = require('selenium-webdriver/chrome');
-const options =new chrome.Options();
-options.setUserPreferences("browser.downloader","c:\\mydowns");
-options.setUserPreferences("browser.download.folderList",2);
-options.setUserPreferences("browser.helperApps.neverAsk.saveToDisk","application/x-csv");
+const firefox = require('selenium-webdriver/firefox');
+const options =new firefox.Options();
+options.setProfile("./SeleniumNewProfile");
+/*
+//setting browser preferences:
+options.setPreference("browser.download.dir","C:/Users/abeer/Desktop");
+options.setPreference("browser.download.folderList",2);
+options.setPreference("browser.helperApps.neverAsk.saveToDisk","application/x-csv");
+options.setPreference("browser.helperApps.alwaysAsk.force", false);
+options.setPreference("browser.download.manager.showWhenStarting",false);
+*/
 
-const driver = new Builder().forBrowser('chrome').build();
-driver.get("http://samplecsvc.s3.amazonaws.com/Sacramentorealestatetransaction.csv");
 
+const driver = new Builder().setFirefoxOptions(options).forBrowser('firefox').build();
+//when download apps of csv type
+//driver.get("http://samplecsvs.s3.amazonaws.com/Sacramentorealestatetransactions.csv");
+
+driver.get("http://google.com");
